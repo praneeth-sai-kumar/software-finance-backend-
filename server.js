@@ -9,12 +9,12 @@ async function startServer() {
     await sequelize.authenticate();
     console.log("Database connected");
 
-    await sequelize.sync({ alter: true }); // 🔥 IMPORTANT
+    await sequelize.sync({ alter: true }); //  IMPORTANT
 
     console.log("Tables created");
 
     app.listen(PORT, () => {
-      console.log(`🚀 Server running on port ${PORT}`);
+      console.log(` Server running on port ${PORT}`);
     });
   } catch (error) {
     console.error("Error starting server:", error);
